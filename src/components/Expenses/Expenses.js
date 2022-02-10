@@ -19,6 +19,7 @@ function Expenses(props) {
         />
         {props.items.map((sharath) => (
           <ExpenseItem
+            key={sharath.id}
             title={sharath.title}
             Amount={sharath.amount}
             date={sharath.date}
